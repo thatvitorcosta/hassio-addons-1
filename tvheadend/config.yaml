@@ -5,6 +5,12 @@ arch:
 - armv7
 - i386
 description: TV streaming server and recorder.
+hassio_role: admin
+hassio_api: true
+privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
+  - SYS_RAWIO
 devices:
 - /dev/dvb
 - /dev/dri
